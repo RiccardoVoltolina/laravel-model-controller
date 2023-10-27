@@ -10,6 +10,6 @@ class PageController extends Controller
 {
     public function index()
     {
-        return view('pages.movies', ['laravel_model_controller' => Movie::all()]);
+        return view('pages.movies', ['Movies' => Movie::all()]);
     }
 }

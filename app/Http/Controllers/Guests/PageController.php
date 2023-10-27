@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Movie;
 
 class PageController extends Controller
 {
     public function index()
     {
-        $saluto = 'ciao';
-        return view('pages.movies', compact('saluto'));
+        return view('pages.movies', ['laravel_model_controller' => Movie::all()]);
     }
 }

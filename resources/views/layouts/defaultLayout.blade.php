@@ -17,8 +17,8 @@
 
 <body>
 
-    ciao
-
+    @include('partials.header')
+    @yield('main_content')
 </body>
 
 </html>

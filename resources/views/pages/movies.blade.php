@@ -2,7 +2,7 @@
 
 @section('main_content')
 
-@foreach ($laravel_model_controller as $movie)
+@foreach ($Movies as $movie)
 
 <div>{{$movie->title}}</div>
 
